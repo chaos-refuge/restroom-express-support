@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>厕所速达 / Restroom Express Support</title>
+  <meta name="description" content="厕所速达 Restroom Express 技术支持与常见问题。">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070604;
+      --card: #14110f;
+      --text: #fff7f0;
+      --muted: rgba(255, 247, 240, .68);
+      --line: rgba(255, 255, 255, .12);
+      --accent: #ff4f08;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 78% 8%, rgba(255,79,8,.25), transparent 34rem),
+        radial-gradient(circle at 8% 44%, rgba(255,79,8,.16), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+    .hero {
+      padding: 42px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(160deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+      box-shadow: 0 24px 80px rgba(0,0,0,.28);
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin: 0 0 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: .98;
+      letter-spacing: -.05em;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: -.02em;
+    }
+    p { margin: 0 0 14px; color: var(--muted); }
+    a { color: var(--accent); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    section {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(20,17,15,.78);
+    }
+    ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    .footer {
+      margin-top: 24px;
+      color: rgba(255,247,240,.48);
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      main { padding: 32px 0; }
+      .hero { padding: 28px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <p class="eyebrow">厕所速达 / Restroom Express</p>
+      <h1>技术支持<br>Support</h1>
+      <p style="margin-top:22px">厕所速达是一款打开后快速寻找附近厕所，并用大箭头提供步行方向提示的 iOS App。</p>
+      <p>Restroom Express helps you find nearby restrooms quickly and follow a simple walking direction arrow.</p>
+    </div>
+
+    <div class="grid">
+      <section>
+        <h2>联系我们 / Contact</h2>
+        <p>如需反馈问题、报告厕所信息错误或请求支持，请发送邮件：</p>
+        <p>For support, bug reports, or restroom data feedback, email:</p>
+        <p><a href="mailto:vosskstudio@gmail.com">vosskstudio@gmail.com</a></p>
+      </section>
+
+      <section>
+        <h2>常见问题 / FAQ</h2>
+        <ul>
+          <li>如果无法定位，请在 iOS 设置中允许 App 使用定位权限。</li>
+          <li>如果附近没有结果，可尝试移动到室外或点击重新搜索。</li>
+          <li>厕所评价与标签来自用户提交，仅供现场判断参考。</li>
+          <li>If location fails, enable Location permission in iOS Settings.</li>
+          <li>If no restroom is found, try again outdoors or tap search again.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>数据来源 / Data</h2>
+        <p>附近厕所搜索与路线由 Apple MapKit 提供。评价功能使用 Apple CloudKit 保存评分与标签。</p>
+        <p>Nearby search and walking routes are powered by Apple MapKit. Reviews use Apple CloudKit for ratings and tags.</p>
+      </section>
+
+      <section>
+        <h2>隐私 / Privacy</h2>
+        <p>App 需要定位权限来搜索附近厕所和计算方向。v1 不上传图片，不要求创建账号，不保存自由文字评论。</p>
+        <p>The app uses location permission to find nearby restrooms and calculate directions. It does not upload photos, require accounts, or store free-text comments in v1.</p>
+      </section>
+    </div>
+
+    <p class="footer">© 2026 Vossk Studio. Last updated: 2026-06-26.</p>
+  </main>
+</body>
+</html>
